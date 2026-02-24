@@ -37,14 +37,13 @@ git push -u origin main-->
 </head>
 <body class="bg-[#F1F2F4]">
 
-    <section class="container mx-auto my-auto ">
-
+<section class="container mx-auto px-2 sm:px-4 md:px-6  my-6 sm:my-10">
         <div class="mx-auto  my-[60px]">
          <h1 class="font-bold text-2xl">Job Application Tracker</h1>
 
         </div>
 
-<div class="grid grid-cols-3 gap-4 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
 
     <div class="card p-5 shadow bg-[#F8FAFC]">
       <div class="card-body">
@@ -70,6 +69,8 @@ git push -u origin main-->
 </div>
 
     
+
+
     <div class="mt-10">
         <div class="flex justify-between gap-10"> <h1 class=" font-bold text-2xl "> Available Jobs</h1>
             <p class="job-count"> 8 jobs</p>
@@ -100,13 +101,33 @@ git push -u origin main-->
 
     </section>
     
+<!--job card-->
+
+  <section class="container mx-auto px-2 sm:px-4 md:px-6 my-6 sm:my-10">
+
+           <div id="job-1" class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
+           <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex   items-center justify-between   gap-10">Biotech farma    <i class="fa-solid fa-trash cursor-pointer"></i></h1>
+       
+            <p class="text-[#64748B]">Fullstack Developer </p>
+            <p class="text-[#64748B]">Newzeland ,Hamilton • Full-time •$130,000 - $175,000</p>
+            <br>
+            
+            <p class="text-[#64748B]">Join our fast-growing team and work on our core platform. Experience with python and c# required. Great benefits and equity package included.</p>
+            
+           <div class="flex flex-col sm:flex-row gap-2">
+            <button class=" interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
+            <button class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
+            </div>
+            </div>
 
 
-    <section class="container mx-auto my-auto" >
+         </div>
 
-         <div class="job space-y-2  mt-4">
+
+
+             <div id="job-2" class="job space-y-2  mt-4">
             <div class="px-4 py-4 bg-white shadow space-y-2">
-            <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">
+          <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">
             Mobile First Corp
            <i class="fa-solid fa-trash cursor-pointer"></i>
             </h1>
@@ -117,15 +138,17 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p><br>
             
-            <div class=" flex gap-2">
+            <div class="flex flex-col sm:flex-row gap-2">
             <button class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class=" reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
             </div>
             </div>
 
 
-            <div class="mt-4 px-4 py-4 space-y-2  bg-white shadow">
-           <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">Webflow Agency <i class="fa-solid fa-trash cursor-pointer"></i></h1>
+   
+
+        <div id="job-3" class="mt-4 px-4 py-4 space-y-2  bg-white shadow">
+           <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">Webflow Agency <i class="fa-solid fa-trash cursor-pointer"></i></h1>
            
             <p class="text-[#64748B]">Web Designer & Developer</p>
             <p class="text-[#64748B]">Los Angeles, CA • Part-time •$80,000 - $120,000</p>
@@ -134,14 +157,16 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p><br>
             
-            <div class=" flex gap-2">
+            <<div class="flex flex-col sm:flex-row gap-2">
             <button class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
            </div>
             </div>
 
-            <div class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
-            <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">DataViz Solution<i class="fa-solid fa-trash cursor-pointer"></i></h1>
+
+
+            <div id="job-4" class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
+            <h1 class="text-[#323B49] font-bold ttext-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">DataViz Solution<i class="fa-solid fa-trash cursor-pointer"></i></h1>
            
             <p class="text-[#64748B]">Data Visualization Specialist</p>
             <p class="text-[#64748B]">Boston, MA • Full-time •$125,000 - $165,000</p>
@@ -151,14 +176,14 @@ git push -u origin main-->
             <p class="text-[#64748B]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
 .          </p><br>
             
-            <div class=" flex gap-2">
+            <div class="flex flex-col sm:flex-row gap-2">
             <button class=" interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
 </div>
             </div>
 
 
- <div class="mt-4 px-4 py-4 bg-white shadow space-y-2 "><h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">cloudfirst inc <i class="fa-solid fa-trash cursor-pointer"></i> </h1>
+ <div id="job-5" class="mt-4 px-4 py-4 bg-white shadow space-y-2 "><h1 class="text-[#323B49] font-bold ttext-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">cloudfirst inc <i class="fa-solid fa-trash cursor-pointer"></i> </h1>
            <i class="fa-solid fa-trash cursor-pointer"></i>
             <p class="text-[#64748B]">Backend Developer</p>
             <p class="text-[#64748B]">Seattle, WA • Full-time • $140,000 - $190,000</p>
@@ -167,7 +192,7 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p><br>
             
-            <div class=" flex gap-2">
+            <div class="flex flex-col sm:flex-row gap-2">
             <button class="bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class="bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
 </div>
@@ -175,8 +200,8 @@ git push -u origin main-->
 
 
 
-            <div class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
-           <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">Megacrop Solutions<i class="fa-solid fa-trash cursor-pointer"></i> </h1>
+            <div  id="job-6" class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
+           <h1 class="text-[#323B49] font-boldtext-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">Megacrop Solutions<i class="fa-solid fa-trash cursor-pointer"></i> </h1>
            
             <p class="text-[#64748B]">JavaScript Developer </p>
             <p class="text-[#64748B]">New york  • Full-time • $140,000 - $190,000</p>
@@ -185,14 +210,16 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities..</p><br>
             
-            <div class=" flex gap-2">
+            <div class="flex flex-col sm:flex-row gap-2">
             <button class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class=" reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
             </div>
             </div>
 
-          <div class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
-            <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between gap-10">Startup XYZ  <i class="fa-solid fa-trash cursor-pointer"></i></h1>
+
+
+          <div id="job-7"  class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
+            <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">Startup XYZ  <i class="fa-solid fa-trash cursor-pointer"></i></h1>
           
             <p class="text-[#64748B]">Full Stack Engineer </p>
             <p class="text-[#64748B]">Remote  full-time    $130,000 - $175,000</p>
@@ -201,15 +228,17 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
             
-            <div class=" flex gap-2">
+       <div class="flex flex-col sm:flex-row gap-2">
             <button class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class=" reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
 </div>
             </div>
 
 
-            <div class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
-           <h1 class="text-[#323B49] font-bold text-xl flex items-center justify-between   gap-10">Tech crop industries     <i class="fa-solid fa-trash cursor-pointer"></i></h1>
+
+
+            <div id="job-8" class="mt-4 px-4 py-4 bg-white shadow space-y-2 ">
+           <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between   gap-10">Tech crop industries     <i class="fa-solid fa-trash cursor-pointer"></i></h1>
        
             <p class="text-[#64748B]">Senior Frontend Developer </p>
             <p class="text-[#64748B]">San Francisco, CA • Full-time •$130,000 - $175,000</p>
@@ -218,7 +247,7 @@ git push -u origin main-->
 
             <p class="text-[#64748B]">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
             
-            <div class=" flex gap-2">
+           <div class="flex flex-col sm:flex-row gap-2">
             <button class=" interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
             <button class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
             </div>
