@@ -77,22 +77,14 @@ git push -u origin main-->
         </div>
          <div class=" flex gap-3  mt-3">
 
-        <a href="index.html"
-       class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300">
-       All
-    </a>
+        <button onclick="showSection('alljobs')" class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300"> All</button>
 
    
+  <button onclick="showSection('interview')" class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300">Interview</button>
+  
+  
+   <button onclick="showSection('rejected')" class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300">Rejected</button>
 
-    <a href="interview.html"
-       class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300">
-       Interview
-    </a>
-
-    <a href="rejected.html"
-       class="px-4 py-2 bg-[#F8FAFC] text-[#64748B] font-semibold rounded-md w-24 text-center hover:bg-blue-300">
-       Rejected
-    </a>
 
 
         </div>
@@ -103,7 +95,7 @@ git push -u origin main-->
     
 <!--job card-->
 
-  <section class="container mx-auto px-2 sm:px-4 md:px-6 my-6 sm:my-10">
+  <section id= "alljobs" class="container mx-auto px-2 sm:px-4 md:px-6 my-6 sm:my-10">
   <div id="jobs-container">
            <div class=" job-card mt-4 px-4 py-4 bg-white shadow space-y-2  " >
            <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex   items-center justify-between  gap-10">Biotech Farma <i class=" delete-btn fa-solid fa-trash cursor-pointer c"></i></h1>
@@ -115,35 +107,38 @@ git push -u origin main-->
             <p class="text-[#64748B]">Join our fast-growing team and work on our core platform. Experience with python and c# required. Great benefits and equity package included.</p>
             
            <div class="flex flex-col sm:flex-row gap-2">
-            <button class=" interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
-            <button class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
+            <button class=" interview-btn  bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
+            <button  class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
             </div>
             </div>
 
 
 
 
+<div class="job-card mt-4 px-4 py-4 bg-white shadow space-y-2">
+  <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">
+    Mobile First Corp
+    <i class="delete-btn fa-solid fa-trash cursor-pointer"></i>
+  </h1>
 
-             <div  class="job-card  space-y-2  mt-4">
-            <div class="px-4 py-4 bg-white shadow space-y-2">
-          <h1 class="text-[#323B49] font-bold text-xl sm:text-2xl md:text-xl lg:text-2xl flex items-center justify-between gap-10">
-            Mobile First Corp
-           <i class="delete-btn fa-solid fa-trash cursor-pointer"></i>
-            </h1>
-            <p class= "text-[#64748B]">React Native Developer</p>
-            <p class="text-[#64748B]">Remote   • Full-time   •$130,000 - $175,000</p>
-            <br>
-            <button class= "NA-btn bg-[#EEF4FF] ">Not Applied</button>
+  <p class="text-[#64748B]">React Native Developer</p>
+  <p class="text-[#64748B]">Remote • Full-time • $130,000 - $175,000</p>
 
-            <p class="text-[#64748B]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p><br>
-            
-            <div class="flex flex-col sm:flex-row gap-2">
-            <button class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md ">INTERVIEW</button>
-            <button class=" reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md ">REJECTED</button>
-            </div>
-            </div>
+  <button class="NA-btn bg-[#EEF4FF] px-2 py-2 rounded-md shadow-md">Not Applied</button>
 
+  <p class="text-[#64748B]">
+    Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.
+  </p>
 
+  <div class="flex flex-col sm:flex-row gap-2">
+    <button  class="interview-btn bg-[#EEF4FF] border-2 border-green-500 text-green-500 font-semibold px-2 py-2 rounded-md">
+      INTERVIEW
+    </button>
+    <button  class="reject-btn bg-[#EEF4FF] border-2 border-red-500 text-red-500 font-semibold px-2 py-2 rounded-md">
+      REJECTED
+    </button>
+  </div>
+</div>
    
 
         <div  class=" job-card mt-4 px-4 py-4 space-y-2  bg-white shadow">
@@ -260,7 +255,61 @@ git push -u origin main-->
 
    
 
+
+
+<!--interview section-->
+<section id="interview" class="container mx-auto px-2 sm:px-4 md:px-6 my-6 sm:my-10 hidden">
+
+
+    <div id="interview-container" class="space-y-4 hidden"></div>
+        <div  id="interview-empty" class="job space-y-2 mt-4">
+  <div class="px-8 py-8 bg-white shadow-lg rounded-lg flex flex-col items-center space-y-4">
+
+    <img class="h-12 w-14" src="jobs.png" >
+
+ 
+    <h1 class="font-bold text-2xl text-center">No Jobs Available here</h1>
+    <p class="text-[#64748B] font-semibold text-center">
+      Check back soon for new job opportunities
+    </p>
+
+  </div>
+</div>
+
+
+    </section>
+
+
+
+    <!----reject section-->
+  <section id="rejected" class="container mx-auto px-2 sm:px-4 md:px-6 my-6 sm:my-10 hidden">
+
+      
+<div class="job space-y-2 mt-4">
+  <div class="px-8 py-8 bg-white shadow-lg rounded-lg flex flex-col items-center space-y-4">
+
+   
+    <img class="h-12 w-14" src="jobs.png" >
+
+ 
+    <h1 class="font-bold text-2xl text-center">No Jobs Available here</h1>
+    <p class="text-[#64748B] font-semibold text-center">
+      Check back soon for new job opportunities
+    </p>
+
+  </div>
+</div>
+
+
+           
+
+
+
+    </section>
+
+
 <script src="script/count.js">  </script>
+
 <script src="script/dlt.js">  </script>
 
 

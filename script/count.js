@@ -57,3 +57,18 @@ for (const button of rejectButtons)
         document.getElementById("rejected-count").innerText = rejectCount;
     });
      }
+//toggle
+
+function showSection(id){
+
+  const alljobs = document.getElementById("alljobs");
+  const interview = document.getElementById("interview");
+  const rejected= document.getElementById("rejected");
+
+  alljobs.classList.add("hidden");
+  interview.classList.add("hidden");
+  rejected.classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}
+
